@@ -34,24 +34,37 @@ defineProps({
         </li>
       </ul>
 
-      <div class="mt-6 flex gap-3">
+      <div
+        v-if="project.githubUrl || project.demoUrl"
+        class="mt-6 flex flex-wrap gap-3"
+      >
         <a
+          v-if="project.githubUrl"
           :href="project.githubUrl"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           class="rounded-xl bg-slate-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-700 dark:bg-white dark:text-slate-950 dark:hover:bg-sky-300"
         >
-          GitHub
+          Voir sur GitHub
         </a>
+
         <a
+          v-if="project.demoUrl"
           :href="project.demoUrl"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           class="rounded-xl border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-sky-500 hover:text-sky-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-sky-400 dark:hover:text-sky-400"
         >
-          Démonstration
+          Voir la démonstration
         </a>
       </div>
+
+      <p
+        v-else
+        class="mt-6 text-sm font-medium text-slate-500 dark:text-slate-400"
+      >
+        Code et démonstration bientôt disponibles.
+      </p>
     </div>
   </article>
 </template>
