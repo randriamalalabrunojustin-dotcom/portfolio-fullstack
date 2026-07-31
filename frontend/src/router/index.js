@@ -1,53 +1,62 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { profile } from '@/data/portfolio'
 
+import HomeView from '@/views/HomeView.vue'
+import AboutView from '@/views/AboutView.vue'
+import SkillsView from '@/views/SkillsView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
+import EducationView from '@/views/EducationView.vue'
+import ExperienceView from '@/views/ExperienceView.vue'
+import ContactView from '@/views/ContactView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
+
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/HomeView.vue'),
+    component: HomeView,
     meta: { title: 'Accueil' },
   },
   {
     path: '/a-propos',
     name: 'about',
-    component: () => import('@/views/AboutView.vue'),
+    component: AboutView,
     meta: { title: 'À propos' },
   },
   {
     path: '/competences',
     name: 'skills',
-    component: () => import('@/views/SkillsView.vue'),
+    component: SkillsView,
     meta: { title: 'Compétences' },
   },
   {
     path: '/projets',
     name: 'projects',
-    component: () => import('@/views/ProjectsView.vue'),
+    component: ProjectsView,
     meta: { title: 'Projets' },
   },
   {
     path: '/formations',
     name: 'education',
-    component: () => import('@/views/EducationView.vue'),
+    component: EducationView,
     meta: { title: 'Formations' },
   },
   {
     path: '/experiences',
     name: 'experience',
-    component: () => import('@/views/ExperienceView.vue'),
+    component: ExperienceView,
     meta: { title: 'Expériences' },
   },
   {
     path: '/contact',
     name: 'contact',
-    component: () => import('@/views/ContactView.vue'),
+    component: ContactView,
     meta: { title: 'Contact' },
   },
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
-    component: () => import('@/views/NotFoundView.vue'),
+    component: NotFoundView,
     meta: { title: 'Page introuvable' },
   },
 ]
@@ -55,8 +64,12 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
+
   scrollBehavior() {
-    return { top: 0, behavior: 'smooth' }
+    return {
+      top: 0,
+      behavior: 'smooth',
+    }
   },
 })
 

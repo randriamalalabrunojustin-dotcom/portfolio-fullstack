@@ -5,10 +5,6 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 
 <template>
   <DefaultLayout>
-    <RouterView v-slot="{ Component, route }">
-      <Transition name="page" mode="out-in">
-        <component :is="Component" :key="route.fullPath" />
-      </Transition>
-    </RouterView>
+    <RouterView />
   </DefaultLayout>
 </template>
