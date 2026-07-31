@@ -1,0 +1,7 @@
+CV À REMPLACER
+
+Remplacez ce fichier par votre véritable CV au format PDF.
+
+1. Supprimez ce fichier.
+2. Ajoutez votre PDF dans le dossier public.
+3. Modifiez profile.cvUrl dans src/data/portfolio.js.

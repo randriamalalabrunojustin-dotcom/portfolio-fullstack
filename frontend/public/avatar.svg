@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e0f2fe"/>
+      <stop offset=".55" stop-color="#ede9fe"/>
+      <stop offset="1" stop-color="#fce7f3"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0284c7"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="720" rx="80" fill="url(#bg)"/>
+  <circle cx="360" cy="280" r="126" fill="#f0c7a5"/>
+  <path d="M234 265c0-93 56-151 129-151 74 0 126 56 126 147-28-30-64-50-114-52-57-2-100 18-141 56Z" fill="#0f172a"/>
+  <path d="M153 720c14-162 85-258 207-258s194 96 207 258H153Z" fill="url(#shirt)"/>
+  <circle cx="315" cy="278" r="9" fill="#334155"/>
+  <circle cx="408" cy="278" r="9" fill="#334155"/>
+  <path d="M320 346c26 20 57 20 82 0" fill="none" stroke="#9a5d4b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M271 252c22-15 45-17 68-6M385 246c24-11 46-8 65 8" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  <text x="360" y="650" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700">VOTRE PHOTO</text>
+</svg>

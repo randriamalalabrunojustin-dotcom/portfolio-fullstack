@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "937dcf0b-0d77-49aa-a080-portfolio-api",
+    "name": "Portfolio API",
+    "description": "Tests de l API Laravel du portfolio.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000/api"
+    }
+  ],
+  "item": [
+    {
+      "name": "Santé de l API",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Envoyer un message valide",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Utilisateur Test\",\n  \"email\": \"test@example.com\",\n  \"subject\": \"Demande de collaboration\",\n  \"message\": \"Bonjour, je souhaite échanger au sujet de votre portfolio.\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/contact-messages",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "contact-messages"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tester la validation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"\",\n  \"email\": \"invalide\",\n  \"subject\": \"\",\n  \"message\": \"court\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/contact-messages",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "contact-messages"
+          ]
+        }
+      }
+    }
+  ]
+}

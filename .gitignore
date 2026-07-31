@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+public/build/
+
+# Logs and caches
+*.log
+.phpunit.result.cache
+frontend/.vite/
+backend/bootstrap/cache/*.php
+!backend/bootstrap/cache/.gitignore
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

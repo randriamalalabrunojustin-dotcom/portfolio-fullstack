@@ -1,0 +1,143 @@
+portfolio-fullstack-vue-laravel/
+├── backend/
+│   ├── app/
+│   │   ├── Http/
+│   │   │   ├── Controllers/
+│   │   │   │   ├── Api/
+│   │   │   │   │   └── ContactMessageController.php
+│   │   │   │   └── Controller.php
+│   │   │   └── Requests/
+│   │   │       └── StoreContactMessageRequest.php
+│   │   ├── Models/
+│   │   │   └── ContactMessage.php
+│   │   └── Providers/
+│   │       └── AppServiceProvider.php
+│   ├── bootstrap/
+│   │   ├── cache/
+│   │   │   └── .gitignore
+│   │   ├── app.php
+│   │   └── providers.php
+│   ├── config/
+│   │   ├── app.php
+│   │   ├── auth.php
+│   │   ├── cache.php
+│   │   ├── cors.php
+│   │   ├── database.php
+│   │   ├── filesystems.php
+│   │   ├── logging.php
+│   │   ├── mail.php
+│   │   ├── queue.php
+│   │   ├── services.php
+│   │   └── session.php
+│   ├── database/
+│   │   ├── factories/
+│   │   │   └── ContactMessageFactory.php
+│   │   ├── migrations/
+│   │   │   ├── 2026_01_01_000001_create_contact_messages_table.php
+│   │   │   ├── 2026_01_01_000002_create_cache_table.php
+│   │   │   └── 2026_01_01_000003_create_jobs_table.php
+│   │   ├── seeders/
+│   │   │   └── DatabaseSeeder.php
+│   │   └── .gitignore
+│   ├── public/
+│   │   ├── .htaccess
+│   │   └── index.php
+│   ├── resources/
+│   │   └── views/
+│   │       └── welcome.blade.php
+│   ├── routes/
+│   │   ├── api.php
+│   │   ├── console.php
+│   │   └── web.php
+│   ├── storage/
+│   │   ├── app/
+│   │   │   ├── private/
+│   │   │   │   └── .gitignore
+│   │   │   └── public/
+│   │   │       └── .gitignore
+│   │   ├── framework/
+│   │   │   ├── cache/
+│   │   │   │   └── data/
+│   │   │   │       └── .gitignore
+│   │   │   ├── sessions/
+│   │   │   │   └── .gitignore
+│   │   │   ├── testing/
+│   │   │   │   └── .gitignore
+│   │   │   └── views/
+│   │   │       └── .gitignore
+│   │   └── logs/
+│   │       └── .gitignore
+│   ├── tests/
+│   │   ├── Feature/
+│   │   │   └── ContactMessageTest.php
+│   │   ├── Unit/
+│   │   │   └── ExampleTest.php
+│   │   └── TestCase.php
+│   ├── .env.example
+│   ├── artisan
+│   ├── composer.json
+│   └── phpunit.xml
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── DEPLOYMENT.md
+│   ├── GIT.md
+│   ├── INSTALLATION.md
+│   ├── PERSONNALISATION.md
+│   ├── POSTMAN.md
+│   └── VERIFICATION.md
+├── frontend/
+│   ├── public/
+│   │   ├── projects/
+│   │   │   ├── catalog.svg
+│   │   │   ├── portfolio.svg
+│   │   │   └── tasks.svg
+│   │   ├── avatar.svg
+│   │   ├── cv-placeholder.txt
+│   │   └── favicon.svg
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── css/
+│   │   │       └── main.css
+│   │   ├── components/
+│   │   │   ├── AppFooter.vue
+│   │   │   ├── AppNavbar.vue
+│   │   │   ├── LoadingSpinner.vue
+│   │   │   ├── ProjectCard.vue
+│   │   │   ├── SectionTitle.vue
+│   │   │   ├── SkillCard.vue
+│   │   │   ├── ThemeToggle.vue
+│   │   │   └── TimelineItem.vue
+│   │   ├── composables/
+│   │   │   └── useTheme.js
+│   │   ├── data/
+│   │   │   └── portfolio.js
+│   │   ├── layouts/
+│   │   │   └── DefaultLayout.vue
+│   │   ├── router/
+│   │   │   └── index.js
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   └── contactService.js
+│   │   ├── views/
+│   │   │   ├── AboutView.vue
+│   │   │   ├── ContactView.vue
+│   │   │   ├── EducationView.vue
+│   │   │   ├── ExperienceView.vue
+│   │   │   ├── HomeView.vue
+│   │   │   ├── NotFoundView.vue
+│   │   │   ├── ProjectsView.vue
+│   │   │   └── SkillsView.vue
+│   │   ├── App.vue
+│   │   └── main.js
+│   ├── .env.example
+│   ├── index.html
+│   ├── jsconfig.json
+│   ├── package.json
+│   ├── vercel.json
+│   └── vite.config.js
+├── postman/
+│   └── Portfolio_API.postman_collection.json
+├── .editorconfig
+├── .gitignore
+├── ARBORESCENCE.txt
+└── README.md
