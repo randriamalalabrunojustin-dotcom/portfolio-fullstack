@@ -3,6 +3,9 @@
 return [
     'default' => env('MAIL_MAILER', 'log'),
     'mailers' => [
+        'resend' => [
+            'transport' => 'resend',
+        ],
         'smtp' => [
             'transport' => 'smtp',
             'scheme' => env('MAIL_SCHEME'),
