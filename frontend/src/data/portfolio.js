@@ -16,7 +16,7 @@ export const profile = {
   availability:
     `Disponible immédiatement pour un stage de Licene 2 en Informatique.`,
 
-  cvUrl: '/CV-Bruno.pdf',
+  cvUrl: '/cv-bruno.pdf',
   avatarUrl: '/photo-profil.jpg',
 
   githubUrl:
